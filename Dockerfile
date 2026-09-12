@@ -1,6 +1,4 @@
 FROM java:openjdk-8-jre-alpine
-MAINTAINER Gardner Vickers <gardner.vickers@onyxplatform.org>
-
 RUN apk add --no-cache wget bash \
     && mkdir -p /opt \
     && wget -q -O - https://archive.apache.org/dist/bookkeeper/bookkeeper-4.3.2/bookkeeper-server-4.3.2-bin.tar.gz | tar -xzf - -C /opt \
